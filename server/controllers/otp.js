@@ -2,7 +2,7 @@ const User = require("../models/user");
 const Otp =require("../models/otp.js")
 const otpTemplate=require("../Template/MailVerification.js")
 const nodemailerSender=require("../Utils/MailSender.js");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 
