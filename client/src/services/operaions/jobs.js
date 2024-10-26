@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import {jobRoute} from "../Api"
 
 export const createJob = async(data) => {

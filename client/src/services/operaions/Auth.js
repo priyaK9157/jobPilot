@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import { authRoute, jobRoute } from "../Api";
 
 export const getUserByEmail = async(data) => {
