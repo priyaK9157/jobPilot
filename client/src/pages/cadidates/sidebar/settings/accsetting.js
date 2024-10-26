@@ -8,7 +8,7 @@ const AccSetting = () => {
     const [email, setEmail] = useState("");
     const [currentPassword, setCurrentPassword] = useState(""); 
     const [newPassword, setNewPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("")
     const dispatch = useDispatch();
 
     const token = localStorage.getItem("token");
