@@ -109,4 +109,4 @@ const Searchbox = ({ onSearch }) => {
   );
 };
 
-export default Searchbox;
+export default Searchbox; 

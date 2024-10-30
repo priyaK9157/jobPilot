@@ -3,41 +3,21 @@ import { IoMdPerson } from 'react-icons/io';
 import { FaBuilding } from 'react-icons/fa';
 import { FaBagShopping } from "react-icons/fa6";
 
-const CardComponent = () => {
+const CardComponent = ({data,text,icon}) => {
     return (
-        <div className="flex flex-wrap gap-4 pb-20 justify-start w-9/12 mx-auto">
+        <div className="flex flex-wrap gap-4 pb-5 justify-start w-9/12 mx-auto ">
 
-            <div className="bg-white py-2 px-14  flex items-center gap-2">
-                <FaBagShopping className="text-blue-500 text-4xl bg-blue-100 p-2" /> 
+            <div className="bg-white   h-[4.4rem]  w-48 p-2 flex items-center gap-3  rounded-md ">
+              <div className='bg-blue-50 rounded-md w-12 h-12 flex justify-center items-center'>
+                <FaBagShopping className="text-blue-500 text-xl    " /> 
+              </div>
+                
                 <div>
-                    <p className="font-semibold text-lg">123000</p>
-                    <p className="text-slate-400 text-sm">Live job</p>
+                    <p className=" font-semibold text-slate-900 text-lg">{data}</p>;
+                    <p className="text-slate-400 text-sm">{text}</p>
                 </div>
             </div>
 
-            <div className="bg-white py-2 px-14  flex items-center gap-2">
-                <FaBuilding className="text-blue-500 text-4xl bg-blue-100 p-2" /> 
-                <div>
-                    <p className="font-semibold text-lg">123000</p>
-                    <p className="text-slate-400 text-sm">Live job</p>
-                </div>
-            </div>
-
-            <div className="bg-white py-2 px-14  flex items-center gap-2">
-                <IoMdPerson className="text-blue-500 text-4xl bg-blue-100 p-2" />
-                <div>
-                    <p className="font-semibold text-lg">123000</p>
-                    <p className="text-slate-400 text-sm">Live job</p>
-                </div>
-            </div>
-
-            <div className="bg-white py-2 px-14 flex items-center gap-2">
-                <IoMdPerson className="text-blue-500 text-4xl bg-blue-100 p-2" />
-                <div>
-                    <p className="font-semibold text-lg">123000</p>
-                    <p className="text-slate-400 text-sm">Live job</p>
-                </div>
-            </div>
         </div>
     );
 };

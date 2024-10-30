@@ -19,8 +19,8 @@ const Featured = () => {
   const [filteredJobs, setFilteredJobs] = useState([]); 
   const [searchQuery, setSearchQuery] = useState(""); 
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1); // Current page state
-  const [jobsPerPage] = useState(6); // Number of jobs per page
+  const [currentPage, setCurrentPage] = useState(1); 
+  const [jobsPerPage] = useState(6);
   const navigate = useNavigate();  
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Featured = () => {
       job.type.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredJobs(filtered);
-    setCurrentPage(1); // Reset to first page on search
+    setCurrentPage(1); 
   };
 
   // Calculate the current jobs to display

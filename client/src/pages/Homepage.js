@@ -64,7 +64,7 @@ const HomePage = () => {
                         </div>
                         
                     </div>
-                    <CardComponent/>
+                    <CardComponent data="123,000" text="live jobs "/>
 
                     {/* most popular vacancies */}
 
