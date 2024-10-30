@@ -1,7 +1,9 @@
 
 
 
-const backend_url = process.env.BACKEND_URL;
+const backend_url = process.env.REACT_APP_BACKEND_URL;
+
+console.log("first", backend_url)
 
 export const authRoute = {
 
