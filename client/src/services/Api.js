@@ -1,7 +1,7 @@
 
 
 
-const backend_url = process.env.BACKEND_URL || "http://localhost:5000";
+const backend_url = process.env.BACKEND_URL;
 
 export const authRoute = {
 
